@@ -1,0 +1,221 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, figcaption, figure, 
+   footer, header, hgroup, menu, nav, section, summary,
+   time, mark, audio, video {
+       margin: 0;
+       padding: 0;
+       border: 0;
+       outline: 0;
+       font-size: 14px;
+       font-family: 'Montserrat', sans-serif;
+       vertical-align: baseline;
+   }
+   /* HTML5 display-role reset for older browsers */
+   article, aside, details, figcaption, figure, 
+   footer, header, hgroup, menu, nav, section {
+       display: block;
+   }
+   body {
+       line-height: 1;
+   }
+   ol, ul {
+       list-style: none;
+   }
+   blockquote, q {
+       quotes: none;
+   }
+   blockquote:before, blockquote:after,
+   q:before, q:after {
+       content: '';
+       content: none;
+   }
+   
+   /* remember to define visible focus styles! 
+   :focus {
+       outline: ?????;
+   } */
+   
+   /* remember to highlight inserts somehow! */
+   ins {
+       text-decoration: none;
+   }
+   del {
+       text-decoration: line-through;
+   }
+   
+   table {
+       border-collapse: collapse;
+       border-spacing: 0;
+   }
+   button {
+    font-family: 'Montserrat', sans-serif;
+   }
+
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: underline;
+}
+body {
+   display: grid;
+   grid-template-rows: 25px auto 25px;
+   max-width: 1900px;
+   height: 915px;
+   padding: 25px;
+   grid-template-areas:
+        "header"
+        "content"
+        "footer";
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    grid-area: content;
+    grid-row-gap: 30px;
+    position: relative;
+    bottom: 50px;
+}
+
+.leaf {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 3px;
+}
+
+.topnav {
+    display: grid;
+    grid-template-columns: 60px 60px auto 70px 60px 80px 115px;
+    justify-items: center;
+    grid-area: header;
+    max-width: 1860px;
+    color: #474747;
+}
+
+.bottnav {
+    display: grid;
+    grid-template-columns: 100px 130px 170px auto 100px 100px 100px;
+    justify-items: center;
+    grid-area: footer;
+    max-width: 1860px;
+    height: 100px;
+    background-color: none;
+    color: #737373;
+    z-index: 2;
+}
+
+.apps {
+    width: 29px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 6px;
+    left: 8px;
+}
+
+.google-logo {
+    width: 270px;
+}
+
+input {
+    display: inline-block;
+    width: 550px;
+    padding: 10px 10px 10px 40px;
+    border-radius: 30px;
+    font-size: 17px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0px 1px 4px 0px #cccccc;
+}
+
+input:hover {
+    box-shadow: 0px 1px 4px 0px #cccccc;
+}
+
+.mag {
+    width: 15px;
+    position: relative;
+    right: 590px;
+}
+
+.button-group {
+    white-space: nowrap;
+}
+
+.button1 {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    white-space: nowrap;
+    position: relative;
+    right: 5px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+}
+
+.button1:hover {
+    border: 1px solid #bfbfbf;
+}
+
+.button2:hover {
+    border: 1px solid #bfbfbf;
+}
+
+.button2 {
+    width: 165px;  
+    height: 40px;
+    font-size: 15px;
+    white-space: nowrap;
+    position: relative;
+    left: 5px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+}
+
+.sign-in {
+    position: relative;
+    bottom: 10px;
+    font-size: 15px;
+    height: 40px;
+    background-color: #0073ed;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 100px;
+}
+
+.back-bot {
+    position: absolute;
+    background-color: #f2f2f2;
+    height: 100px;
+    width: 2000px;
+    left: -30px;
+    top: 900px;
+}
